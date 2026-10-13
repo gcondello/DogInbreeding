@@ -1,0 +1,9 @@
+id,sire,dam
+F1,,
+F2,,
+F3,MISSING_SIRE,
+D1,F1,F2
+D2,F1,F2
+PUP,D1,D2
+PO,D1,F2
+HALF,D1,F3

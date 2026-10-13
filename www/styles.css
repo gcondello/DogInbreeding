@@ -1,0 +1,238 @@
+/* =========================================================
+  GENERAL
+========================================================= */
+  
+  body {
+    background-color: #ffffff;
+      color: #000000;
+  }
+
+h1,
+h2,
+h3,
+h4 {
+  color: #000000;
+}
+
+h3 {
+  border-bottom: 3px solid #b30000;
+  padding-bottom: 0.4rem;
+  margin-top: 2rem;
+}
+
+
+/* =========================================================
+  APP LAYOUT
+========================================================= */
+  
+  .app-wrap {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+
+.app-sidebar {
+  flex: 0 1 22rem;
+  min-width: 12rem;
+  max-width: 22rem;
+  width: 28%;
+  
+  background-color: #f5f5f5;
+    border: 1px solid #000000;
+  border-radius: 6px;
+  
+  padding: 1rem;
+}
+
+.app-sidebar .shiny-input-container,
+.app-sidebar .btn {
+  width: 100%;
+  max-width: 100%;
+}
+
+.app-sidebar .col-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.app-sidebar .col-actions .btn {
+  flex: 1 1 0;
+  width: auto;
+}
+
+.checkbox-group-scroll {
+  max-height: 16rem;
+  overflow-y: auto;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  padding: 0.35rem 0.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.checkbox-group-scroll .shiny-input-container {
+  margin-bottom: 0;
+}
+
+.data-output-wrap {
+  overflow-x: auto;
+}
+
+.app-main {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+
+/* =========================================================
+  BUTTONS
+========================================================= */
+  
+  .btn-primary {
+    background-color: #b30000;
+      border-color: #8f0000;
+      color: #ffffff;
+  }
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #8f0000;
+    border-color: #700000;
+    color: #ffffff;
+}
+
+.btn-secondary {
+  background-color: #000000;
+    border-color: #000000;
+    color: #ffffff;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #333333;
+    border-color: #333333;
+    color: #ffffff;
+}
+
+.shiny-download-link {
+  background-color: #000000;
+    border-color: #000000;
+    color: #ffffff;
+}
+
+.shiny-download-link:hover {
+  background-color: #333333;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+  SUMMARY CARDS
+========================================================= */
+  
+  .summary-box {
+    background-color: #ffffff;
+      
+      border: 2px solid #000000;
+    border-top: 5px solid #b30000;
+    border-radius: 6px;
+    
+    padding: 1rem;
+    text-align: center;
+    
+    margin-bottom: 1rem;
+  }
+
+.summary-label {
+  font-size: 0.95rem;
+  color: #333333;
+    font-weight: 600;
+}
+
+.summary-value {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #b30000;
+    
+    margin-top: 0.25rem;
+}
+
+
+/* =========================================================
+  TABLES
+========================================================= */
+  
+  .table {
+    border: 1px solid #000000;
+  }
+
+.table thead th {
+  background-color: #000000;
+    color: #ffffff;
+    border-color: #000000;
+}
+
+.data-output-wrap table thead th {
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.data-output-wrap table thead th.sort-asc::after {
+  content: " \25B2";
+}
+
+.data-output-wrap table thead th.sort-desc::after {
+  content: " \25BC";
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+.table tbody tr:hover {
+  background-color: #ffe6e6;
+}
+
+
+/* =========================================================
+  ALERTS
+========================================================= */
+  
+  .alert-success {
+    background-color: #E8F3EC;
+      border-color: #2E7D4F;
+      color: #1F4D32;
+  }
+
+.alert-warning {
+  background-color: #fff5f5;
+    border-color: #b30000;
+    color: #000000;
+}
+
+.alert-danger {
+  background-color: #ffe6e6;
+    border-color: #b30000;
+    color: #000000;
+}
+
+
+/* =========================================================
+  MOBILE
+========================================================= */
+  
+  @media (max-width: 700px) {
+    
+    .app-wrap {
+      flex-direction: column;
+    }
+    
+    .app-sidebar {
+      width: 100%;
+      max-width: none;
+      min-width: 0;
+    }
+    
+  }
